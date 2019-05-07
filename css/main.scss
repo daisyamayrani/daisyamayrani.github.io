@@ -1,5 +1,5 @@
 @import url( 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import "reset";
+
 
 
 *{
@@ -13,18 +13,19 @@
  	background-color: #A98C86;
  	padding-bottom: 20px;
   .header {
-  	background: url(../img/mtsnowmelt.jpg);
+    background: url(../img/mtsnowmelt.jpg);
   	height: 100vh;
   	background-size: cover;
-  	color: #F6D2C9;
-  	padding: 50px;
-    font-size: 40px;
-  	text-align: center;
-  	text-shadow: 2px 2px #891f1f;
-  	border-bottom: 5px dotted #DF8B79;
-  	border-radius: 5px;
+    border-bottom: 4px dashed #DF8B79;
     h1 {
-      padding-bottom: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #F6D2C9;
+      text-align: center;
+    	text-shadow: 2px 2px #891f1f;
     }
   }
 
@@ -33,6 +34,7 @@
   	background-color: #DF8B79;
   	text-align: center;
   	margin-bottom: 20px;
+    border-bottom: 4px dashed #A5857E;
     li{
       font-size: 25px;
     }
@@ -105,46 +107,57 @@ a:hover, a:active {
 }
 
 
-/*** images
-
-
-
-****/
-
 
 
 /******* Media Queries *****/
-@media (max-width: 767px) {
-
-}
-
 
 /* tablets and desktop */
 @media only screen and (min-width: 974px) {
-  // .wrapper {
-  //   background-color: yellow;
-  // }
-
-}
-
-
+  .wrapper {
+    // background-color: yellow;
+    }
+  }
 /* phones */
 @media only screen and (max-width: 974px) {
-  // .wrapper {
-  //   background-color: blue;
-  // }
-  .titles {
-    font-size: 80%;
-  }
-  .content {
-    margin: 3% 3% 10% 3%;
+  .wrapper {
+    // background-color: blue;
+    .header {
+      h1 {
+      font-size: 50px;
+      width: 75%;
+      }
+    }
+    .navbar {
+      margin: 0;
+      padding: 0;
+      li {
+        // width: 100%;
+        padding: 0 0 0 0;
+        display: block;
+        height: 70px;
+      }
+      a {
+        padding: 0 0 0 0;
+        position: relative;
+        top: 20px;
+      }
+    }
+    img {
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+      height: 75%;
+    }
+    .content {
+      margin: 3% 3% 10% 3%;
+    }
   }
 }
-
-
 /* portrait phones */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-  // .wrapper {
-  //   background-color: red;
-  // }
+  .wrapper {
+    // background-color: red;
+  }
 }

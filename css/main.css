@@ -1,1 +1,116 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{margin:0}.wrapper{background-color:#A98C86;padding-bottom:20px}.wrapper .header{background:url(../img/mtsnowmelt.jpg);height:100vh;background-size:cover;color:#F6D2C9;padding:50px;font-size:40px;text-align:center;text-shadow:2px 2px #891f1f;border-bottom:5px dotted #DF8B79;border-radius:5px}.wrapper .header h1{padding-bottom:20px}.wrapper .navbar{padding:20px;background-color:#DF8B79;text-align:center;margin-bottom:20px}.wrapper .navbar li{font-size:25px}.wrapper img{border-radius:50%;display:block;margin-left:auto;margin-right:auto;width:auto;height:30rem;padding:20px}.wrapper .content{position:relative;padding:30px 50px;margin:30px 50px;background-color:#DCC1BB;color:#A5857E;border-radius:25px;border:2px solid #DF8B79}.wrapper .content p{line-height:28px}.footer{position:absolute;right:0;margin:0;left:0;width:100%;height:50px;background-color:#D0BCB7;color:#696969;text-align:center}.footer p{padding-top:18px}.navbar li,.header li{margin:0;display:inline-block}a:link{color:#891f1f;text-decoration:none;padding:40px}a:visited{background-color:#997E82;color:white}a:hover,a:active{color:#F7F1F0}@media only screen and (max-width: 974px){.titles{font-size:80%}.content{margin:3% 3% 10% 3%}}
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+* {
+  margin: 0; }
+
+/**** Alignment and spacing of sections ********/
+.wrapper {
+  background-color: #A98C86;
+  padding-bottom: 20px; }
+  .wrapper .header {
+    background: url(../img/mtsnowmelt.jpg);
+    height: 100vh;
+    background-size: cover;
+    border-bottom: 4px dashed #DF8B79; }
+    .wrapper .header h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #F6D2C9;
+      text-align: center;
+      text-shadow: 2px 2px #891f1f; }
+  .wrapper .navbar {
+    padding: 20px;
+    background-color: #DF8B79;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px dashed #A5857E; }
+    .wrapper .navbar li {
+      font-size: 25px; }
+  .wrapper img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 30rem;
+    padding: 20px; }
+  .wrapper .content {
+    position: relative;
+    padding: 30px 50px;
+    margin: 30px 50px;
+    background-color: #DCC1BB;
+    color: #A5857E;
+    border-radius: 25px;
+    border: 2px solid #DF8B79; }
+    .wrapper .content p {
+      line-height: 28px; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #D0BCB7;
+  color: #696969;
+  text-align: center; }
+  .footer p {
+    padding-top: 18px; }
+
+/**** Nav bar*******/
+.navbar li,
+.header li {
+  margin: 0;
+  display: inline-block; }
+
+/*** Active selectors
+
+
+WORK ON THE PSEUDO ELEMENTS NEXT
+
+**/
+a:link {
+  color: #891f1f;
+  text-decoration: none;
+  padding: 40px; }
+
+a:visited {
+  background-color: #997E82;
+  color: white; }
+
+a:hover, a:active {
+  color: #F7F1F0; }
+
+/******* Media Queries *****/
+/* tablets and desktop */
+/* phones */
+@media only screen and (max-width: 974px) {
+  .wrapper .header h1 {
+    font-size: 50px;
+    width: 75%; }
+  .wrapper .navbar {
+    margin: 0;
+    padding: 0; }
+    .wrapper .navbar li {
+      padding: 0 0 0 0;
+      display: block;
+      height: 70px; }
+    .wrapper .navbar a {
+      padding: 0 0 0 0;
+      position: relative;
+      top: 20px; }
+  .wrapper img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: 75%; }
+  .wrapper .content {
+    margin: 3% 3% 10% 3%; } }
+/* portrait phones */
+
+/*# sourceMappingURL=main.css.map */
