@@ -8,7 +8,7 @@
   padding-bottom: 20px; }
   .wrapper .header {
     background: url(../img/mtsnowmelt.jpg);
-    height: 90vh;
+    height: 91vh;
     background-size: cover;
     border-bottom: 4px dashed #DF8B79; }
     .wrapper .header h1 {
@@ -27,7 +27,8 @@
     margin-bottom: 20px;
     border-bottom: 4px dashed #A5857E; }
     .wrapper .navbar li {
-      font-size: 25px; }
+      font-size: 25px;
+      padding-right: 30px; }
   .wrapper img {
     border-radius: 50%;
     display: block;
@@ -48,12 +49,6 @@
     .wrapper .content p {
       color: #A5857E;
       line-height: 28px; }
-  .wrapper .contactMe {
-    align-items: center; }
-    .wrapper .contactMe .links {
-      padding: 20px;
-      text-align: center;
-      margin-bottom: 20px; }
 
 .footer {
   position: absolute;
@@ -61,7 +56,7 @@
   margin: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 100px;
   background-color: #D0BCB7;
   color: #696969;
   text-align: center; }
@@ -82,8 +77,7 @@ WORK ON THE PSEUDO ELEMENTS NEXT
 **/
 a:link {
   color: #891f1f;
-  text-decoration: none;
-  padding: 40px; }
+  text-decoration: none; }
 
 a:visited {
   background-color: #997E82;
@@ -118,18 +112,7 @@ a:hover, a:active {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    height: 75%; }
-  .wrapper .contactMe .links {
-    width: 100%;
-    margin: 0;
-    padding: 0 0 0 0; }
-    .wrapper .contactMe .links a {
-      padding: 0 0 0 0;
-      display: block;
-      height: 70px;
-      font-size: 20px;
-      position: relative;
-      top: 20px; } }
+    height: 75%; } }
 /* portrait phones */
 
 /*# sourceMappingURL=main.css.map */
