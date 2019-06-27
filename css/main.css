@@ -30,25 +30,67 @@
       font-size: 25px;
       padding-right: 30px; }
   .wrapper img {
-    border-radius: 50%;
+    border-radius: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: auto;
     height: 30rem;
     padding: 20px; }
-  .wrapper .content {
-    position: relative;
-    padding: 30px 50px;
-    margin: 30px 10px;
-    background-color: #DCC1BB;
-    border-radius: 25px;
-    border: 2px solid #DF8B79; }
-    .wrapper .content h3 {
-      color: #FFFFFF; }
-    .wrapper .content p {
-      color: #A5857E;
-      line-height: 28px; }
+  .wrapper #content-section {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+    .wrapper #content-section .content {
+      position: relative;
+      padding: 30px 50px;
+      margin: 30px 10px;
+      background-color: #DCC1BB;
+      border-radius: 25px;
+      border: 2px solid #DF8B79; }
+      .wrapper #content-section .content h3 {
+        color: #FFFFFF; }
+      .wrapper #content-section .content p {
+        color: #A5857E;
+        line-height: 28px; }
+      .wrapper #content-section .content .knowledge-icons {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: ". . . ." ". . . ."; }
+        .wrapper #content-section .content .knowledge-icons .icons {
+          position: relative;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto; }
+          .wrapper #content-section .content .knowledge-icons .icons img {
+            display: block;
+            width: 100%;
+            height: auto; }
+          .wrapper #content-section .content .knowledge-icons .icons .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #DF8B79; }
+            .wrapper #content-section .content .knowledge-icons .icons .overlay:hover {
+              opacity: 1; }
+            .wrapper #content-section .content .knowledge-icons .icons .overlay .text {
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center; }
 
 .footer {
   position: absolute;
@@ -56,12 +98,20 @@
   margin: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: #D0BCB7;
   color: #696969;
   text-align: center; }
-  .footer p {
-    padding-top: 18px; }
+  .footer .links {
+    padding-bottom: 30px;
+    padding-top: 30px; }
+    .footer .links a {
+      font-size: 20px;
+      margin-left: 20px; }
+  .footer .copyright {
+    padding-bottom: 20px; }
+    .footer .copyright p {
+      font-size: 14px; }
 
 /**** Nav bar*******/
 .navbar li,
