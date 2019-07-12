@@ -3,21 +3,22 @@
 $lightPink: #F6D2C9;
 $darkPink: #DF8B79;
 $white: #FFFFFF;
-$lightBrown: #A5857E;
+$offWhite: #fff7f0;
+$brown: #A5857E;
+$fadedBrown: #D0BCB7;
+$darkPurple: #A98C86;
+
 
 *{
  	margin: 0;
  }
 
  /**** Alignment and spacing of sections ********/
-  .wrapper {
- 	background-color: #A98C86;
- 	padding-bottom: 20px;
+
   .header {
     background: url(../img/mtsnowmelt.jpg);
   	height: 91vh;
   	background-size: cover;
-    border-bottom: 4px dashed #DF8B79;
     h1 {
       position: absolute;
       top: 50%;
@@ -33,91 +34,118 @@ $lightBrown: #A5857E;
   	padding: 20px;
   	background-color: $darkPink;
   	text-align: center;
-  	margin-bottom: 20px;
-    border-bottom: 4px dashed #A5857E;
+  	//margin-bottom: 20px;
+    border-bottom: 4px solid #A5857E;
+    border-top: 4px solid #A5857E;
     li{
       font-size: 25px;
       padding-right: 30px;
     }
   }
-  img {
-    border-radius: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height:30rem;
+
+
+
+////////////////////////////////
+//CSS for all similar section
+
+#content-section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  .content {
+    position: relative;
+    background-color: $lightPink;
+    border-bottom: 5px solid $darkPink;
+    padding: 20% 10%;
+    .sectionTitle {
+      color: $white;
+      text-align: center;
+      font-size: 3rem;
+      margin: 0 0 70px 0;
+    }
+    p {
+      color: $brown;
+      line-height: 28px;
+    }
   }
-  #content-section {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    .content {
-    	position: relative;
-    	padding: 30px 50px;
-    	margin: 30px 10px;
-    	background-color: #DCC1BB;
-    	border-radius: 25px;
-      border: 2px solid $darkPink;
-      .sectionTitle {
-        color: $white;
-        text-align: center;
-      }
-      p {
-        color: $lightBrown;
-        line-height: 28px;
-      }
-      .knowledge-icons {
-        padding-top: 70px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: ". . . ." ". . . .";
-        .icons {
-          position: relative;
-          width: 50%;
-          margin-left: auto;
-          margin-right: auto;
-          img {
-            display: block;
-            width: 100%;
-            height: auto;
-            padding-right: 0px !important;
-            padding-left: 0px !important;
-            padding-top: 0px !important;
-            padding-bottom: 0px !important;
+ }
+
+  #aboutMe{
+    p {
+      font-size: 21px;
+    }
+  }
+
+  #knowledge {
+    .knowledge-icons {
+      padding-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: ". . . ." ". . . .";
+      .icons {
+        position: relative;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+          padding-top: 0px !important;
+          padding-bottom: 0px !important;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: #DF8B79;
+          &:hover  {
+            opacity: 1;
           }
-          .overlay {
+          .text {
+            color: white;
+            font-size: 20px;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #DF8B79;
-            &:hover  {
-              opacity: 1;
-            }
-            .text {
-              color: white;
-              font-size: 20px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-              text-align: center;
-            }
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
           }
         }
       }
     }
-   }
   }
+
+
+  #projects {
+    .container{
+      margin: 50px;
+      text-align: center;
+      h1 {
+        color: $offWhite;
+        padding-bottom: 20px;
+      }
+    }
+    .emails{
+
+    }
+    .websites{
+
+    }
+  }
+
+
 
 
 
@@ -128,7 +156,7 @@ $lightBrown: #A5857E;
 	left:0;
 	width: 100%;
 	height: auto;
-	background-color: #D0BCB7;
+	background-color: $fadedBrown;
 	color: #696969;
 	text-align: center;
   .links {
@@ -148,6 +176,9 @@ $lightBrown: #A5857E;
   }
 
 }
+
+
+
 
 /**** Nav bar*******/
 .navbar li,
@@ -214,14 +245,7 @@ a:hover, a:active {
         top: 20px;
       }
     }
-    img {
-      border-radius: 50%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
-      height: 75%;
-    }
+
     .content {
     }
     .footer {
