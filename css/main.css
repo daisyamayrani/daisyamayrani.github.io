@@ -47,7 +47,10 @@
       line-height: 28px; }
 
 #aboutMe p {
-  font-size: 21px; }
+  font-size: 21px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
 
 #knowledge .knowledge-icons {
   padding-top: 70px;
@@ -97,7 +100,12 @@
   text-align: center; }
   #projects .container h1 {
     color: #fff7f0;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 2.5rem; }
+  #projects .container .item a {
+    font-size: 1rem; }
+  #projects .container .item p {
+    font-size: 1rem; }
 
 .footer {
   position: absolute;

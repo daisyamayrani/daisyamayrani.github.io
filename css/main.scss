@@ -75,6 +75,9 @@ $darkPurple: #A98C86;
   #aboutMe{
     p {
       font-size: 21px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -137,6 +140,15 @@ $darkPurple: #A98C86;
       h1 {
         color: $offWhite;
         padding-bottom: 20px;
+        font-size: 2.5rem;
+      }
+      .item {
+        a {
+          font-size: 1rem;
+        }
+        p{
+          font-size: 1rem;
+        }
       }
     }
     .emails{
@@ -221,6 +233,7 @@ a:hover, a:active {
   .wrapper {
     // background-color: yellow;
     }
+    //aboutme amake the width a smaller percentage
   }
 /* phones */
 @media only screen and (max-width: 974px) {
@@ -259,5 +272,7 @@ a:hover, a:active {
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   .wrapper {
     // background-color: red;
+    // Knowledge section separate the icons
+    // main image make it smaller to show flowers
   }
 }
