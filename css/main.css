@@ -4,18 +4,18 @@
 
 /**** Alignment and spacing of sections ********/
 .header {
-  background: url(../img/mtsnowmelt.jpg);
+  background: url(../img/pinkDaisies.jpg);
   height: 91vh;
   background-size: cover; }
   .header h1 {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
     color: #F6D2C9;
     text-align: center;
-    text-shadow: 2px 2px #891f1f; }
+    text-shadow: 2.5px 2.5px #891f1f; }
 
 .navbar {
   padding: 20px;
@@ -40,7 +40,8 @@
       color: #FFFFFF;
       text-align: center;
       font-size: 3rem;
-      margin: 0 0 70px 0; }
+      margin: 0 0 70px 0;
+      text-shadow: 2px 2px #891f1f; }
     #content-section .content p {
       color: #A5857E;
       line-height: 28px; }
