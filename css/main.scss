@@ -16,8 +16,11 @@ $darkPurple: #A98C86;
  /**** Alignment and spacing of sections ********/
 
   .header {
-    background: url(../img/pinkDaisies.jpg);
-
+    background: url(../img/pinkDaisies.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   	height: 91vh;
   	background-size: cover;
     h1 {
