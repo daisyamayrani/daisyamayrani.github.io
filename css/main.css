@@ -29,7 +29,8 @@
   border-top: 4px solid #A5857E; }
   .navbar li {
     font-size: 25px;
-    padding-right: 30px; }
+    padding-right: 30px;
+    text-shadow: 1px 1px #891f1f; }
 
 #content-section {
   width: 100%;
@@ -108,8 +109,9 @@
     font-size: 2.5rem;
     text-shadow: 1px 1px #891f1f; }
   #projects .container .item a {
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #891f1f; }
+    font-size: 1rem;
+    text-shadow: 1px 1px #891f1f;
+    color: white; }
   #projects .container .item p {
     font-size: 1rem; }
 
@@ -147,14 +149,14 @@ WORK ON THE PSEUDO ELEMENTS NEXT
 
 **/
 a:link {
-  color: #891f1f;
+  color: white;
   text-decoration: none; }
 
 a:visited {
   background-color: #997E82;
   color: white; }
 
-a:hover, a:active {
+a:hover {
   color: #F7F1F0; }
 
 /******* Media Queries *****/

@@ -44,6 +44,7 @@ $darkPurple: #A98C86;
     li{
       font-size: 25px;
       padding-right: 30px;
+      text-shadow: 1px 1px #891f1f;
     }
   }
 
@@ -148,8 +149,9 @@ $darkPurple: #A98C86;
       }
       .item {
         a {
-          font-size: 1.5rem;
+          font-size: 1rem;
           text-shadow: 1px 1px #891f1f;
+          color: white;
         }
         p{
           font-size: 1rem;
@@ -215,7 +217,7 @@ WORK ON THE PSEUDO ELEMENTS NEXT
 **/
 
 a:link {
-	color: #891f1f;
+	color: white;
 	text-decoration: none;
 	// padding: 20px;
  }
@@ -223,7 +225,7 @@ a:visited {
 	background-color: #997E82;
 	color: white;
 }
-a:hover, a:active {
+a:hover{
     color: #F7F1F0;
 
 }
