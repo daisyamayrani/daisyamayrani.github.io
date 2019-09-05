@@ -21,8 +21,9 @@ $darkPurple: #A98C86;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  	height: 91vh;
-  	background-size: cover;
+  	height: 90vh;
+    max-width:100%;
+    min-width: 10%;
     h1 {
       position: absolute;
       top: 30%;
@@ -61,12 +62,12 @@ $darkPurple: #A98C86;
     position: relative;
     background-color: $lightPink;
     border-bottom: 5px solid $darkPink;
-    padding: 20% 10%;
+    padding: 8%;
     .sectionTitle {
       color: $white;
       text-align: center;
       font-size: 3rem;
-      margin: 0 0 70px 0;
+      margin: 0 0 10px 0;
       text-shadow: 2px 2px #891f1f;
     }
     p {
@@ -86,6 +87,9 @@ $darkPurple: #A98C86;
   }
 
   #knowledge {
+    .sectionTitle{
+      padding-bottom: 10px;
+    }
     .knowledge-icons {
       padding-top: 70px;
       display: grid;
@@ -240,6 +244,21 @@ a:hover{
   .wrapper {
     // background-color: yellow;
     }
+    #projects{
+      .projectTypes {
+        display: grid;
+        height: auto;
+        align-content: space-evenly;
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        .container {
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+      }
+    }
     //aboutme amake the width a smaller percentage
   }
 /* phones */
@@ -268,8 +287,7 @@ a:hover{
       }
     }
 
-    .content {
-    }
+
     .footer {
 
     }
