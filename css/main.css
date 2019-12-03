@@ -4,30 +4,37 @@
 
 /**** Alignment and spacing of sections ********/
 .header {
-  background: url(../img/pinkDaisies.jpg) no-repeat center center fixed;
+  background: url(../img/greyOcean.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   max-width: 100%;
   min-width: 10%; }
-  .header h1 {
+  .header .title-section {
     position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    color: #F6D2C9;
-    text-align: center;
-    text-shadow: 2.5px 2.5px #891f1f; }
+    top: 40%;
+    left: 50%; }
+    .header .title-section h1 {
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #F6D2C9;
+      text-align: center;
+      text-shadow: 2.5px 2.5px #891f1f; }
+    .header .title-section h5 {
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: #F6D2C9;
+      text-align: center;
+      text-shadow: 2px 2px #891f1f; }
 
 .navbar {
-  padding: 20px;
-  background-color: #DF8B79;
+  padding: 30px;
+  background-color: #F6D2C9;
   text-align: center;
-  border-bottom: 4px solid #A5857E;
-  border-top: 4px solid #A5857E; }
+  border-bottom: 4px solid #D0BCB7;
+  border-top: 4px solid #D0BCB7; }
   .navbar li {
     font-size: 25px;
     padding-right: 30px;
@@ -36,44 +43,53 @@
 #content-section {
   width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: url("/img/darkGreyWall.jpg") no-repeat fixed center; }
   #content-section .content {
     position: relative;
-    background-color: #F6D2C9;
-    border-bottom: 5px solid #DF8B79;
-    padding: 8%; }
+    border-bottom: 2px dashed #D0BCB7;
+    padding: 8%;
+    background: rgba(0, 0, 0, 0.5); }
     #content-section .content .sectionTitle {
       color: #FFFFFF;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.7rem;
       margin: 0 0 10px 0;
       text-shadow: 2px 2px #891f1f; }
     #content-section .content p {
-      color: #A5857E;
-      line-height: 28px; }
+      color: #fff7f0;
+      text-shadow: 2px 2px #891f1f;
+      line-height: 28px;
+      padding-bottom: 10px; }
 
 #aboutMe p {
   font-size: 21px;
   width: 70%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 50px; }
 
 #knowledge .sectionTitle {
   padding-bottom: 10px; }
 #knowledge .knowledge-icons {
-  padding-top: 70px;
+  background: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: ". . . ." ". . . ."; }
   #knowledge .knowledge-icons .icons {
     position: relative;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
     #knowledge .knowledge-icons .icons img {
       display: block;
-      width: 100%;
+      width: 90%;
       height: auto;
       padding-right: 0px !important;
       padding-left: 0px !important;
@@ -105,14 +121,16 @@
 
 #projects .container {
   margin: 50px;
-  text-align: center; }
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3); }
   #projects .container h1 {
     color: #fff7f0;
     padding-bottom: 20px;
     font-size: 2.5rem;
-    text-shadow: 1px 1px #891f1f; }
+    text-shadow: 2px 2px #891f1f;
+    text-decoration: underline; }
   #projects .container .item a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-shadow: 1px 1px #891f1f;
     color: white; }
   #projects .container .item p {
@@ -137,7 +155,8 @@
   .footer .copyright {
     padding-bottom: 20px; }
     .footer .copyright p {
-      font-size: 14px; }
+      font-size: 14px;
+      color: #fff7f0; }
 
 /**** Nav bar*******/
 .navbar li,
