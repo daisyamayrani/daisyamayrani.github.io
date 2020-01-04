@@ -63,7 +63,7 @@
       padding-bottom: 10px; }
 
 #aboutMe p {
-  font-size: 21px;
+  font-size: 25px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -129,12 +129,25 @@
     font-size: 2.5rem;
     text-shadow: 2px 2px #891f1f;
     text-decoration: underline; }
-  #projects .container .item a {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px #891f1f;
-    color: white; }
-  #projects .container .item p {
-    font-size: 1rem; }
+  #projects .container .item {
+    padding-bottom: 20px; }
+    #projects .container .item a {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px #891f1f;
+      color: white; }
+      #projects .container .item a:hover {
+        color: #CE9DD9; }
+    #projects .container .item p {
+      font-size: 1rem;
+      padding-bottom: 0px; }
+    #projects .container .item .link {
+      font-size: 15px !important;
+      font-style: italic;
+      color: #F6D2C9;
+      text-shadow: 1px 1px #A98C86;
+      padding-bottom: 10px; }
+      #projects .container .item .link:hover {
+        color: #CE9DD9; }
 
 .footer {
   position: absolute;

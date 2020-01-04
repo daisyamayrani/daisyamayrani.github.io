@@ -6,6 +6,7 @@ $white: #FFFFFF;
 $offWhite: #fff7f0;
 $brown: #A5857E;
 $fadedBrown: #D0BCB7;
+$lightPurple: #CE9DD9;
 $darkPurple: #A98C86;
 $offBlack: #313639;
 
@@ -91,7 +92,7 @@ $offBlack: #313639;
 
   #aboutMe{
     p {
-      font-size: 21px;
+      font-size: 25px;
       width: 70%;
       margin-left: auto;
       margin-right: auto;
@@ -174,13 +175,28 @@ $offBlack: #313639;
         text-decoration: underline;
       }
       .item {
+        padding-bottom: 20px;
         a {
           font-size: 1.2rem;
           text-shadow: 1px 1px #891f1f;
           color: white;
+          &:hover {
+              color: $lightPurple;
+          }
         }
         p{
           font-size: 1rem;
+          padding-bottom: 0px;
+        }
+        .link{
+          font-size: 15px!important;
+          font-style: italic;
+          color: $lightPink;
+          text-shadow: 1px 1px $darkPurple;
+          padding-bottom: 10px;
+          &:hover {
+              color: $lightPurple;
+          }
         }
       }
     }
