@@ -70,7 +70,7 @@
       font-family: 'ABeeZee', sans-serif; }
     #content-section .content p {
       color: #fff7f0;
-      text-shadow: 2px 2px #891f1f;
+      text-shadow: 1px 1px #891f1f;
       line-height: 28px;
       padding-bottom: 20px;
       border-radius: 10px 100px / 120px; }
@@ -193,7 +193,7 @@
   width: 100%;
   height: auto;
   background-color: #585e5e;
-  color: #696969;
+  color: #fff7f0;
   text-align: center; }
   .footer .links {
     padding-bottom: 30px;
@@ -229,7 +229,7 @@ a:visited {
   color: white; }
 
 a:hover {
-  color: #F7F1F0; }
+  color: orange !important; }
 
 /******* Media Queries *****/
 /* tablets and desktop */
@@ -248,9 +248,18 @@ a:hover {
 @media only screen and (max-width: 974px) {
   .wrapper .header {
     height: 95vh; }
-    .wrapper .header .navbar img {
-      display: none; }
-    .wrapper .header h1 {
+    .wrapper .header .navbar {
+      height: 50px;
+      padding: 0px; }
+      .wrapper .header .navbar li {
+        height: auto; }
+      .wrapper .header .navbar img {
+        display: none; }
+  .wrapper .title-section {
+    display: absolute;
+    top: 60%;
+    height: 80vh; }
+    .wrapper .title-section h1 {
       font-size: 50px;
       width: 75%; } }
 /* portrait phones */
