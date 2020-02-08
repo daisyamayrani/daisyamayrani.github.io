@@ -79,7 +79,6 @@
 
 #aboutMe p {
   font-size: 18px;
-  width: 70%;
   margin-left: auto;
   margin-right: auto;
   padding: 40px !important;
@@ -92,7 +91,7 @@
   padding-bottom: 10px; }
 #knowledge .knowledge-icons {
   background: rgba(255, 255, 255, 0.3);
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   padding: 30px;
@@ -265,12 +264,18 @@ a:hover {
     .wrapper .title-section .text-area {
       width: 90% !important; }
       .wrapper .title-section .text-area h1 {
-        font-size: 50px; } }
+        font-size: 50px; }
+  .wrapper #knowledge .knowledge-icons {
+    width: 100% !important; } }
 /* portrait phones */
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .header .navbar {
     width: 100% !important;
     font-size: 12px;
-    padding: 0 8px !important; } }
+    padding: 0 8px !important; }
+
+  .content p {
+    padding: 37px !important;
+    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */

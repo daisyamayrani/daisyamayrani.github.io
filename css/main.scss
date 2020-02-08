@@ -118,7 +118,6 @@ $offBlack: #585e5e;
   #aboutMe{
     p {
       font-size: 18px;
-      width: 70%;
       margin-left: auto;
       margin-right: auto;
       padding: 40px !important;
@@ -137,7 +136,7 @@ $offBlack: #585e5e;
     }
     .knowledge-icons {
       background: rgba(255, 255, 255, 0.3);
-      width: 80%;
+      width: 75%;
       margin-left: auto;
       margin-right: auto;
       padding: 30px;
@@ -370,14 +369,14 @@ a:hover{
         width: 90% !important;
         h1 {
         font-size: 50px;
-
-
-
         }
       }
-
     }
-
+    #knowledge {
+      .knowledge-icons {
+        width: 100% !important;
+      }
+    }
   }
 }
 /* portrait phones */
@@ -389,5 +388,12 @@ a:hover{
       padding: 0 8px !important;
     }
   }
+  .content {
+    p {
+      padding: 37px !important;
+      width: 90%;
+    }
+  }
+
 
 }
