@@ -10,20 +10,34 @@
   max-width: 100%;
   position: relative; }
   .header .navbar {
-    width: 70%;
+    width: 60%;
     height: 15vh;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
     font-family: 'ABeeZee', sans-serif; }
-    .header .navbar img {
-      height: 75px;
-      width: 250px; }
-    .header .navbar a {
+    .header .navbar .img-div {
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+      .header .navbar .img-div img {
+        height: 75px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto; }
+    .header .navbar ul {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
-      color: #F6D2C9;
-      font-size: 20px;
-      text-shadow: 1px 1px #891f1f; }
+      padding-left: 0px; }
+      .header .navbar ul a {
+        text-align: center;
+        color: #F6D2C9;
+        font-size: 20px;
+        text-shadow: 1px 1px #891f1f;
+        padding-right: 30px; }
   .header .title-section {
     height: 75vh;
     text-align: center;
@@ -106,6 +120,7 @@
   #knowledge .knowledge-icons .icons {
     position: relative;
     width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto; }
     #knowledge .knowledge-icons .icons img {
@@ -159,7 +174,7 @@
     text-shadow: 2px 2px #891f1f;
     text-decoration: underline; }
   #projects .container .item {
-    padding-bottom: 20px; }
+    padding-bottom: 40px; }
     #projects .container .item a {
       font-size: 1.2rem;
       text-shadow: 1px 1px #891f1f;
@@ -168,13 +183,13 @@
         color: #CE9DD9; }
     #projects .container .item p {
       font-size: 1rem;
-      padding-bottom: 0px; }
+      padding-bottom: 0px !important; }
     #projects .container .item .link {
       font-size: 15px !important;
       font-style: italic;
       color: #F6D2C9;
       text-shadow: 1px 1px #A98C86;
-      padding-bottom: 10px; }
+      padding-bottom: 0px !important; }
       #projects .container .item .link:hover {
         color: #CE9DD9; }
 #projects .projectTypes {
@@ -248,14 +263,18 @@ a:hover {
 /* phones */
 @media only screen and (max-width: 974px) {
   .wrapper .header .navbar {
-    height: 50px;
-    padding: 0px;
-    width: 80%; }
-    .wrapper .header .navbar li {
-      height: auto;
-      font: 17px; }
-    .wrapper .header .navbar img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px; }
+    .wrapper .header .navbar .img-div {
       display: none; }
+    .wrapper .header .navbar ul {
+      width: 100% !important;
+      padding-left: 0px !important; }
+      .wrapper .header .navbar ul a {
+        text-align: center;
+        padding-right: 0px !important; }
   .wrapper .title-section {
     width: 90% !important;
     position: absolute !important;
@@ -270,9 +289,26 @@ a:hover {
 /* portrait phones */
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .header .navbar {
-    width: 100% !important;
-    font-size: 12px;
-    padding: 0 8px !important; }
+    width: 100%;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    font-family: 'ABeeZee', sans-serif; }
+    .header .navbar .img-div {
+      display: none; }
+    .header .navbar ul {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-left: 0px; }
+      .header .navbar ul a {
+        text-align: center;
+        color: #F6D2C9;
+        font-size: 15px !important;
+        text-shadow: 1px 1px #891f1f;
+        padding-right: 0px !important; }
 
   .content p {
     padding: 37px !important;

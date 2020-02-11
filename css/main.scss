@@ -22,24 +22,39 @@ $offBlack: #585e5e;
     background: radial-gradient(circle, rgba(226,152,55,1) 0%, rgba(139,80,20,1) 100%);
   	height: 90vh;
     max-width:100%;
-    // min-width: 10%;
     position: relative;
     .navbar {
-        width: 70%;
+        width: 60%;
         height: 15vh;
         margin-left: auto;
         margin-right: auto;
         padding-top: 15px;
         font-family: 'ABeeZee', sans-serif;
-        img {
-          height: 75px;
-          width: 250px;
+        .img-div {
+          width: 30%;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          img {
+            height: 75px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+          }
         }
-       a{
+       ul {
+         width: 70%;
+         margin-left: auto;
+         margin-right: auto;
          text-align: center;
-         color: $lightPink;
-         font-size: 20px;
-         text-shadow: 1px 1px #891f1f;
+         padding-left: 0px;
+         a {
+           text-align: center;
+           color: $lightPink;
+           font-size: 20px;
+           text-shadow: 1px 1px #891f1f;
+           padding-right: 30px;
+         }
        }
      }
     .title-section {
@@ -151,6 +166,7 @@ $offBlack: #585e5e;
       .icons {
         position: relative;
         width: 100%;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         img {
@@ -214,7 +230,7 @@ $offBlack: #585e5e;
         text-decoration: underline;
       }
       .item {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         a {
           font-size: 1.2rem;
           text-shadow: 1px 1px #891f1f;
@@ -223,16 +239,16 @@ $offBlack: #585e5e;
               color: $lightPurple;
           }
         }
-        p{
+        p {
           font-size: 1rem;
-          padding-bottom: 0px;
+          padding-bottom: 0px !important;
         }
         .link{
           font-size: 15px!important;
           font-style: italic;
           color: $lightPink;
           text-shadow: 1px 1px $darkPurple;
-          padding-bottom: 10px;
+          padding-bottom: 0px !important;
           &:hover {
               color: $lightPurple;
           }
@@ -266,7 +282,6 @@ $offBlack: #585e5e;
     .links {
       padding-bottom: 30px;
       padding-top: 30px;
-
       a {
         font-size: 20px;
         margin-left:20px;
@@ -346,19 +361,27 @@ a:hover{
     // background-color: blue;
 
     .header {
-      .navbar{
-        height: 50px;
-        padding: 0px;
-        width: 80%;
-        li {
-          height: auto;
-          font: 17px;
+      .navbar {
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 15px;
+          .img-div {
+            display: none;
 
-        }
-        img {
-          display: none;
-        }
-      }
+            img {
+
+            }
+          }
+         ul {
+           width: 100% !important;
+           padding-left: 0px !important;
+           a {
+             text-align: center;
+              padding-right: 0px !important;
+           }
+         }
+       }
     }
     .title-section {
       width: 90% !important;
@@ -383,11 +406,31 @@ a:hover{
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .header {
     .navbar {
-      width: 100% !important;
-      font-size: 12px;
-      padding: 0 8px !important;
-    }
-  }
+        width: 100%;
+        height: 15vh;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+        font-family: 'ABeeZee', sans-serif;
+        .img-div {
+          display:none;
+        }
+       ul {
+         width: 100%;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         padding-left: 0px;
+         a {
+           text-align: center;
+           color: $lightPink;
+           font-size: 15px !important;
+           text-shadow: 1px 1px #891f1f;
+           padding-right: 0px !important;
+         }
+       }
+     }
+   }
   .content {
     p {
       padding: 37px !important;
