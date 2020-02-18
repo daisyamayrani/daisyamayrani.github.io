@@ -18,9 +18,8 @@ $offBlack: #585e5e;
  /**** Alignment and spacing of sections ********/
 
   .header {
-    background: rgb(226,152,55);
-    background: radial-gradient(circle, rgba(226,152,55,1) 0%, rgba(139,80,20,1) 100%);
-  	height: 90vh;
+    background-image: radial-gradient(circle, #8e858f, #9f798a, #b16c72, #b5664b, #a36b1c);
+    height: 90vh;
     max-width:100%;
     position: relative;
     .navbar {

@@ -4,8 +4,7 @@
 
 /**** Alignment and spacing of sections ********/
 .header {
-  background: #e29837;
-  background: radial-gradient(circle, #e29837 0%, #8b5014 100%);
+  background-image: radial-gradient(circle, #8e858f, #9f798a, #b16c72, #b5664b, #a36b1c);
   height: 90vh;
   max-width: 100%;
   position: relative; }
