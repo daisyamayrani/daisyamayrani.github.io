@@ -4,7 +4,7 @@
 
 /**** Alignment and spacing of sections ********/
 .header {
-  background-image: radial-gradient(circle, #8e858f, #9f798a, #b16c72, #b5664b, #a36b1c);
+  background-image: radial-gradient(circle, #e5777c, #c76074, #a84b6a, #89375f, #692653);
   height: 90vh;
   max-width: 100%;
   position: relative; }
@@ -169,6 +169,7 @@
   #projects .container h1 {
     color: #fff7f0;
     padding-bottom: 20px;
+    padding-top: 20px;
     font-size: 2.5rem;
     text-shadow: 2px 2px #891f1f;
     text-decoration: underline; }
@@ -180,9 +181,24 @@
       color: white; }
       #projects .container .item a:hover {
         color: #CE9DD9; }
+      #projects .container .item a .title {
+        padding-top: 10px;
+        font-style: italic; }
     #projects .container .item p {
       font-size: 1rem;
-      padding-bottom: 0px !important; }
+      padding-bottom: 0px !important;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto; }
+    #projects .container .item img {
+      width: 300px;
+      height: 600px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 5px 7px 16px 7px rgba(0, 0, 0, 0.52);
+      box-shadow: 5px 7px 16px 7px rgba(0, 0, 0, 0.52); }
     #projects .container .item .link {
       font-size: 15px !important;
       font-style: italic;
