@@ -48,8 +48,10 @@
     .header .title-section img {
       height: 200px;
       width: 200px;
-      border-radius: 30%;
-      border: solid 3px white; }
+      border-radius: 50%;
+      -webkit-box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 12px -5px rgba(0, 0, 0, 0.75); }
     .header .title-section .text-area {
       margin: auto;
       width: 100%; }
