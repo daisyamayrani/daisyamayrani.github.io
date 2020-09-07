@@ -6,7 +6,7 @@
 		<title>Daisy A. Pineda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=ABeeZee|Cambay|Raleway&display=swap" rel="stylesheet">
@@ -18,20 +18,20 @@
 
 			<div class="header" id="title" >
 
+				<!-- Figure out how the header area is interweaved inside itself.  -->
+
 				<div class="navbar">
 					<div class="img-div">
 						<img src="/img/dpDaisy.png" alt="">
 					</div>
-
 					<ul>
 						<li><a href="index.html#aboutMe">About Me |</a></li>
 						<li><a href="index.html#knowledge">Knowledge | </a></li>
 						<li><a href="index.html#projects">Projects</a></li>
 					</ul>
+				</div>
 
-			</div>
 			<div class="main-title-section">
-				<img src="/img/daisy.jpg" alt="">
 				<div class="text-area">
 					<h4>Hi my name is</h4>
 					<h1>Daisy A. Pineda</h1>
@@ -41,22 +41,29 @@
 
 			</div> <!-- end of HEADER -->
 
-
-
-
 			<div id="content-section">
 
-				<div class="content" id="aboutMe">
+				<div class="content container" id="aboutMe">
 					<h3 class="sectionTitle">About Me:</h3>
-					<p style="text-indent: 1em;">
-						 I am passionate about Front End Development and HTML Emails. I am currently looking to expand my knowledge in web development by gaining experience with a full time position as a web developer. I'm eager to get into the field and learn any language or tool needed. </br>
-					</p>
+					<div class="text-img row align-items-center h-100 text-center text-lg-left">
+						<div class="image col-lg-6 p-lg-0">
+							<img class="col-12 "src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80 625w" alt="laptop">
+						</div>
+						<div class="text col-lg-5 mx-auto py-3">
+							<p class=" col-12 text-center"style="text-indent: 1rem;">
+								 I am passionate about Front End Development and HTML Emails. I am currently looking to expand my knowledge in web development by gaining experience with a full time position as a web developer. I'm eager to get into the field and learn any language or tool needed. </br>
+							</p>
+						</div>
+					</div>
+
+
+
 				</div>
 
 				<div class="content" id="knowledge">
-					<h3 class="sectionTitle">Knowledge of: </h3>
+					<h3 class="sectionTitle">Knowledge: </h3>
 
-					<div class="knowledge-icons">
+					<div class="knowledge-icons content-box">
 
 						<div class="icons">
 							<img src="/img/htmlCss.png" alt="">
@@ -120,127 +127,145 @@
 					<h3 class="sectionTitle">Projects: </h3>
 					<div class="projectTypes">
 
-
-						<div class="emails container">
-							<h1>Emails</h1>
-							<div class="item">
-								<a href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">
-									 Wells Fargo Email</a>
-								<p>-Used hand-coded HTML Tables to create this HTML email.</p>
-								<!-- trying to update button links -->
-
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/WellsFargoEmail" target="_blank">Github Code</a>
-								</button>
-
-								<a href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">
-									<img src="/img/projectImages/WellsFargoScreenshot.png" alt="">
-								</a>
-
-
-							</div>
-
-							<div class="item">
-								<a href="https://daisyamayrani.github.io/offerEmail/" target="_blank">
-									 Retail Offer Email</a>
-								<p>-Designed and used hand-coded HTML Tables to create this HTML email.</p>
-
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/offerEmail/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/offerEmail" target="_blank">Github Code</a>
-								</button>
-
-								<a href="https://daisyamayrani.github.io/offerEmail/" target="_blank">
-									<img src="/img/projectImages/offerEmailScreenshot.png" alt="">
-								</a>
-
-							</div>
-
-							<div class="item">
-								<a href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">
-									 Indeed Email</a>
-								<p>-Used hand-coded HTML tables to create this HTML email.</p>
-
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/IndeedEmail" target="_blank">Github Code</a>
-								</button>
-
-								<a href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">
-									<img src="/img/projectImages/IndeedEmailScreenshot.png" alt="">
-								</a>
-
-							</div>
-						</div>
-
-						<div class="websites container">
+						<div class="websites container content-box">
 							<h1>Websites</h1>
 
-							<div class="item">
-								<a href="https://daisyamayrani.github.io/jpmachine/" target="_blank">Machine Shop Buisness Website</a>
-								<p>-Designed and used HTML, CSS, and Bootstrap to create this website for a machine shop.</p>
+							<div class="item d-flex justify-content-between">
+								<div class="text col-lg-5 mx-auto py-3 ">
+									<a class="title" href="https://daisyamayrani.github.io/VacationComp/" target="_blank">
+										 Travel Company Website</a>
+									<p>-Used HTML, SCSS, Bootstrap, and Javascript to create this website.</p>
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/VacationComp/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/VacationComp" target="_blank">Github Code</a>
+									</button>
+								</div>
 
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/jpmachine/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/jpmachine" target="_blank">Github Code</a>
-								</button>
-
-								<a href="https://daisyamayrani.github.io/jpmachine/" target="_blank">
-									<img src="/img/projectImages/JPMachineScreenshot.png" alt="">
-								</a>
-
+								<div class="image col-lg-6 p-lg-0 ">
+									<a href="https://daisyamayrani.github.io/VacationComp/" target="_blank">
+									<img src="/img/projectImages/vacationCompScreenshot.png" alt="">
+									</a>
+								</div>
 							</div>
 
-							<div class="item">
-								<a class="title" href="https://daisyamayrani.github.io/VacationComp/" target="_blank">
-									 Travel Company Website</a>
-								<p>-Used HTML, CSS, and Bootstrap to create this website.</p>
+							<div class="item d-flex justify-content-between">
+								<div class="text col-lg-5 mx-auto py-3">
+									<a href="https://daisyamayrani.github.io/jpmachine/" target="_blank">Machine Shop Website</a>
+									<p>-Designed and used HTML, CSS, and Bootstrap to create this website for a machine shop.</p>
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/jpmachine/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/jpmachine" target="_blank">Github Code</a>
+									</button>
+								</div>
 
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/VacationComp/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/VacationComp" target="_blank">Github Code</a>
-								</button>
-
-								<a href="https://daisyamayrani.github.io/VacationComp/" target="_blank">
-								<img src="/img/projectImages/vacationCompScreenshot.png" alt="">
-								</a>
-
+								<div class="image col-lg-6 p-lg-0">
+									<a href="https://daisyamayrani.github.io/jpmachine/" target="_blank">
+										<img src="/img/projectImages/JPMachineScreenshot.png" alt="">
+									</a>
+								</div>
 							</div>
 
-							<div class="item">
-								<a href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">Bakery Website</a>
-								<p>-Used HTML and CSS with grid and flexbox to create this website.</p>
+							<div class="item d-flex justify-content-between">
+								<div class="text col-lg-5 mx-auto py-3">
+									<a href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">Bakery Website</a>
+									<p>-Used HTML and CSS with grid and flexbox to create this website.</p>
 
-								<button type="button" name="button">
-									<a class="link" href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">Website</a>
-								</button>
-								<button type="button" name="button">
-									<a class="link" href="https://github.com/daisyamayrani/massive-cakes" target="_blank">Github Code</a>
-								</button>
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/massive-cakes" target="_blank">Github Code</a>
+									</button>
+								</div>
 
-								<a href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">
-									<img src="/img/projectImages/MassiveCakesScreenshot.png" alt="">
-								</a>
+								<div class="image col-lg-6 p-lg-0">
+									<a href="https://daisyamayrani.github.io/massive-cakes/" target="_blank">
+										<img src="/img/projectImages/MassiveCakesScreenshot.png" alt="">
+									</a>
+								</div>
 
 							</div>
 						</div>
+
+						<div class="emails container content-box">
+							<h1>Emails</h1>
+							<div class="item d-flex justify-content-between">
+
+								<div class="text col-lg-5 mx-auto py-3">
+									<a href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">
+										 Wells Fargo Email</a>
+									<p>-Used hand-coded HTML Tables to create this HTML email.</p>
+									<!-- trying to update button links -->
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/WellsFargoEmail" target="_blank">Github Code</a>
+									</button>
+								</div>
+
+								<div class="image col-lg-6 p-lg-0">
+									<a href="https://daisyamayrani.github.io/WellsFargoEmail/" target="_blank">
+										<img src="/img/projectImages/WellsFargoScreenshot.png" alt="">
+									</a>
+								</div>
+
+
+							</div>
+
+							<div class="item d-flex justify-content-between">
+								<div class="text col-lg-5 mx-auto py-3">
+									<a href="https://daisyamayrani.github.io/offerEmail/" target="_blank">
+										 Retail Offer Email</a>
+									<p>-Designed and used hand-coded HTML Tables to create this HTML email.</p>
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/offerEmail/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/offerEmail" target="_blank">Github Code</a>
+									</button>
+								</div>
+
+								<div class="image col-lg-6 p-lg-0">
+									<a href="https://daisyamayrani.github.io/offerEmail/" target="_blank">
+										<img src="/img/projectImages/offerEmailScreenshot.png" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="item d-flex justify-content-between">
+								<div class="text col-lg-5 mx-auto py-3">
+									<a href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">
+										 Indeed Email</a>
+									<p>-Used hand-coded HTML tables to create this HTML email.</p>
+									<button type="button" name="button">
+										<a class="link" href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">Website</a>
+									</button>
+									<button type="button" name="button">
+										<a class="link" href="https://github.com/daisyamayrani/IndeedEmail" target="_blank">Github Code</a>
+									</button>
+								</div>
+
+								<div class="image col-lg-6 p-lg-0">
+									<a href="https://daisyamayrani.github.io/IndeedEmail/" target="_blank">
+										<img src="/img/projectImages/IndeedEmailScreenshot.png" alt="">
+									</a>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 
 
 				</div> <!-- END OF ID PROJECTS -->
 
-</div> <!-- END CONTENT SECTION-->
+			</div> <!-- END CONTENT SECTION-->
+
 		</div>  <!-- END OF WRAPPER -->
 
 		<div id="footer">
@@ -257,10 +282,5 @@
 
 </html>
 
-<!--
 
-
-travel image info
-<img src="img/travelWeb.png" alt="">
-
--->
+<!-- https://daisyamayrani:R0bert093@github.com/daisyamayrani/portfolio2.git -->
