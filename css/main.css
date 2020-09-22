@@ -15,22 +15,22 @@
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
     font-family: 'ABeeZee', sans-serif; }
-    .header nav .logo {
-      color: #e2e2ff;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-size: 20px; }
+    .header nav .logo img {
+      height: 40%;
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto; }
     .header nav .nav-links {
       display: flex;
       justify-content: space-around;
       width: 40%;
-      z-index: 2; }
+      z-index: 2;
+      margin-top: 1rem; }
       .header nav .nav-links li {
         list-style: none; }
       .header nav .nav-links a {
-        color: #e2e2ff;
+        color: #F6D2C9;
         text-decoration: none;
         letter-spacing: 3px;
         font-weight: bold;
@@ -136,57 +136,35 @@
     padding-bottom: 10px;
     color: #fff7f0 !important; }
   #knowledge .knowledge-icons {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: ". . . ." ". . . ."; }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". . . " ". . . "; }
     #knowledge .knowledge-icons .icons {
-      position: relative;
+      display: block;
       width: 100%;
       height: 100%;
       margin-left: auto;
       margin-right: auto; }
       #knowledge .knowledge-icons .icons img {
         display: block;
-        width: 80%;
+        width: 70%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-top: auto;
-        margin-bottom: auto;
+        margin-bottom: 20px;
         padding-right: 0px !important;
         padding-left: 0px !important;
         padding-top: 0px !important;
         padding-bottom: 0px !important;
-        border-radius: 40px; }
-      #knowledge .knowledge-icons .icons .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #DF8B79;
-        border-radius: 30px; }
-        #knowledge .knowledge-icons .icons .overlay:hover {
-          opacity: 1; }
-        #knowledge .knowledge-icons .icons .overlay .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-          text-align: center; }
+        border-radius: 9px; }
+      #knowledge .knowledge-icons .icons .title {
+        display: inline-block; }
 
 #projects .container {
   text-align: center; }
@@ -341,20 +319,24 @@ a:hover {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #5d4954;
+    height: 91vh;
+    top: 9vh;
+    background-color: #c76074;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50% !important;
+    width: 99.99% !important;
     transform: translateX(100%);
     transition: transform 0.5s ease-in; }
     .nav-links li {
       opacity: 0; }
+      .nav-links li a {
+        font-size: 2rem !important; }
 
   .burger {
-    display: block !important; } }
+    display: block !important; }
+    .burger div {
+      background-color: #F6D2C9 !important; } }
 .nav-active {
   transform: translateX(0%); }
 
