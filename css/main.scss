@@ -14,7 +14,7 @@ body p {
 
 
 .sectionTitles{
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: $green;
   text-shadow: 2px 2px $blue;
   margin-bottom: 50px;
@@ -89,6 +89,7 @@ button {
     &__aboutMe {
       width: 100%;
       padding-bottom: 2rem;
+      margin-bottom: 2rem;
       &__img {
         max-width:100%;
         border-radius: 50%;
@@ -100,6 +101,7 @@ button {
       padding-left: 0;
       padding-top: 0;
       padding-bottom: 0;
+      margin-bottom: 2rem;
       &__card {
         &__img {
           padding-bottom: 1rem;
@@ -117,6 +119,9 @@ button {
     &__text {
 
       &__title {
+        display: block;
+        text-align: center;
+        width: 100%;
         font-size: 1.5rem;
         color: $green;
         text-shadow: 1.1px 1.1px $blue;
@@ -126,6 +131,13 @@ button {
         }
       }
       &__btn {
+        display: block;
+        align-items: center;
+        width: 50%;
+        margin-top: .5rem;
+        margin-left: auto;
+        margin-right: auto;
+
         &:hover {
           background-color: $blue;
         }
@@ -138,7 +150,14 @@ button {
       }
     }
     &__image {
+      img {
+        margin-top: 1rem;
+        padding: 0;
+        box-shadow: 0px 10px 40px -8px rgba(0,0,0,0.58);
+        -webkit-box-shadow: 0px 10px 40px -8px rgba(0,0,0,0.58);
+        -moz-box-shadow: 0px 10px 40px -8px rgba(0,0,0,0.58);
 
+      }
     }
   }
   .line {
@@ -151,7 +170,7 @@ button {
 
 .footer {
   	background-color: $green;
-    margin-top: 2rem;
+    margin-top: 3rem;
     &__links {
       padding-bottom: 30px;
       padding-top: 30px;

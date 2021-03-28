@@ -2,7 +2,7 @@ body p {
   font-size: 16px; }
 
 .sectionTitles {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #50A39B;
   text-shadow: 2px 2px #535f95;
   margin-bottom: 50px;
@@ -55,7 +55,8 @@ button {
     width: 100%; }
     .info__align__aboutMe {
       width: 100%;
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      margin-bottom: 2rem; }
       .info__align__aboutMe__img {
         max-width: 100%;
         border-radius: 50%;
@@ -64,22 +65,39 @@ button {
       padding-right: 0;
       padding-left: 0;
       padding-top: 0;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      margin-bottom: 2rem; }
       .info__align__knowledge__card__img {
         padding-bottom: 1rem; }
 
 .projects__content__text__title {
+  display: block;
+  text-align: center;
+  width: 100%;
   font-size: 1.5rem;
   color: #50A39B;
   text-shadow: 1.1px 1.1px #535f95; }
   .projects__content__text__title:hover {
     text-decoration: none;
     color: #535f95; }
-.projects__content__text__btn:hover {
-  background-color: #535f95; }
-.projects__content__text__btn .link:hover {
-  text-decoration: none;
-  color: #FFFAFA; }
+.projects__content__text__btn {
+  display: block;
+  align-items: center;
+  width: 50%;
+  margin-top: .5rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .projects__content__text__btn:hover {
+    background-color: #535f95; }
+  .projects__content__text__btn .link:hover {
+    text-decoration: none;
+    color: #FFFAFA; }
+.projects__content__image img {
+  margin-top: 1rem;
+  padding: 0;
+  box-shadow: 0px 10px 40px -8px rgba(0, 0, 0, 0.58);
+  -webkit-box-shadow: 0px 10px 40px -8px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 10px 40px -8px rgba(0, 0, 0, 0.58); }
 .projects .line {
   border-bottom: .5px solid grey;
   margin-bottom: 2rem;
@@ -87,7 +105,7 @@ button {
 
 .footer {
   background-color: #50A39B;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
   .footer__links {
     padding-bottom: 30px;
     padding-top: 30px; }
