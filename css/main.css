@@ -37,7 +37,7 @@ button {
     z-index: 999999;
     right: 0;
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     text-align: center;
     display: table; }
     .header .jumbotron__box {
@@ -48,9 +48,9 @@ button {
       text-shadow: 2px 2px 5px #000500;
       color: #FFFAFA; }
       .header .jumbotron__box__title {
-        font-size: 4rem; }
-      .header .jumbotron__box__paragraph {
         font-size: 3rem; }
+      .header .jumbotron__box__paragraph {
+        font-size: 2rem; }
 
 .info {
   height: 100%; }
@@ -104,6 +104,7 @@ button {
         margin-right: auto; }
         .projects__container__content__image a img {
           width: 200px;
+          max-height: 350px;
           border-radius: 5%;
           object-fit: cover;
           object-position: top;
