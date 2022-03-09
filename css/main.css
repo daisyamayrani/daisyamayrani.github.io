@@ -14,10 +14,10 @@ button {
   color: #FFFAFA;
   border-radius: 10%;
   border: 1px solid black;
-  width: 7rem; }
+  width: 5rem; }
   button a {
     color: #FFFAFA;
-    text-shadow: 1.2px 1.2px #535f95; }
+    text-shadow: 0.1px 0.1px #535f95; }
 
 .img-fluid {
   border: 0px solid #dee2e6; }
@@ -67,7 +67,8 @@ button {
         margin-left: auto;
         margin-right: auto; }
         .info__align__aboutMe__content__img {
-          border-radius: 50%;
+          width: 100%;
+          border-radius: 40%;
           margin-bottom: 50px;
           margin-left: auto;
           margin-right: auto; }
@@ -103,8 +104,8 @@ button {
         margin-left: auto;
         margin-right: auto; }
         .projects__container__content__image a img {
-          width: 200px;
-          max-height: 350px;
+          width: 350px;
+          max-height: 280px;
           border-radius: 5%;
           object-fit: cover;
           object-position: top;
@@ -117,27 +118,36 @@ button {
       text-align: center;
       padding-bottom: 60px; }
       .projects__container__content__text__title {
+        margin-bottom: 10px;
         display: block;
         text-align: center;
         width: 100%;
         font-size: 1.5rem;
+        letter-spacing: .5px;
         color: #50A39B;
         text-shadow: 1.1px 1.1px #535f95; }
         .projects__container__content__text__title:hover {
           text-decoration: none;
           color: #535f95; }
       .projects__container__content__text__p {
-        width: 99%; }
-      .projects__container__content__text__btn {
-        display: block;
-        align-items: center;
-        width: 60%;
+        width: 90%;
+        font-size: .9rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400; }
+      .projects__container__content__text__btnSec__btn {
+        font-size: .8rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
         margin-top: .5rem;
         margin-left: auto;
-        margin-right: auto; }
-        .projects__container__content__text__btn:hover {
-          background-color: #535f95; }
-        .projects__container__content__text__btn .link:hover {
+        margin-right: auto;
+        outline: none;
+        border: none;
+        width: 6rem; }
+        .projects__container__content__text__btnSec__btn:hover {
+          background-color: #535f95;
+          box-shadow: 5px 5px 31px -10px #000000; }
+        .projects__container__content__text__btnSec__btn .link:hover {
           text-decoration: none;
           color: #FFFAFA; }
 
@@ -146,9 +156,15 @@ button {
   padding-bottom: 80px;
   padding-top: 80px; }
   #HTMLprojects h3, #HTMLprojects .projects__container__content__text__title {
-    color: #9e87c4; }
-  #HTMLprojects .projects__container__content__text__btn {
-    background-color: #9e87c4; }
+    color: #535f95;
+    text-shadow: 1px 1px #50A39B; }
+    #HTMLprojects h3:hover, #HTMLprojects .projects__container__content__text__title:hover {
+      text-decoration: none;
+      color: #50A39B; }
+  #HTMLprojects .projects__container__content__text__btnSec__btn {
+    background-color: #535f95; }
+    #HTMLprojects .projects__container__content__text__btnSec__btn:hover {
+      background-color: #50A39B; }
 
 .footer {
   background-color: #50A39B;

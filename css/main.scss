@@ -27,12 +27,13 @@ button {
  color: $offWhite;
  border-radius: 10%;
  border: 1px solid black;
- width:7rem;
+ width: 5rem;
  a {
    color: $offWhite;
-   text-shadow: 1.2px 1.2px $blue;
+   text-shadow: 0.1px 0.1px #535f95;
  }
 }
+
 
 .img-fluid {
   border: 0px solid #dee2e6;
@@ -104,7 +105,8 @@ button {
         margin-left: auto;
         margin-right: auto;
         &__img {
-          border-radius: 50%;
+          width: 100%;
+          border-radius:40%;
           margin-bottom: 50px;
           margin-left: auto;
           margin-right: auto;
@@ -155,8 +157,9 @@ button {
           margin-left: auto;
           margin-right: auto;
           img {
-            width: 200px;
-            max-height: 350px;
+            width: 350px;
+            max-height: 280px;
+            // 350px
             border-radius: 5%;
             object-fit:cover;
             object-position: top;
@@ -172,10 +175,12 @@ button {
         text-align: center;
         padding-bottom: 60px;
         &__title {
+          margin-bottom: 10px;
           display: block;
           text-align: center;
           width: 100%;
           font-size: 1.5rem;
+          letter-spacing: .5px;
           color: $green;
           text-shadow: 1.1px 1.1px $blue;
           &:hover {
@@ -184,23 +189,31 @@ button {
           }
         }
         &__p {
-          width: 99%;
+          width: 90%;
+          font-size: .9rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
         }
-        &__btn {
-          display: block;
-          align-items: center;
-          width: 60%;
-          margin-top: .5rem;
-          margin-left: auto;
-          margin-right: auto;
-
-          &:hover {
-            background-color: $blue;
-          }
-          .link {
+        &__btnSec {
+          &__btn {
+            font-size: .8rem;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: .5rem;
+            margin-left: auto;
+            margin-right: auto;
+            outline: none;
+            border: none;
+            width: 6rem;
             &:hover {
-            text-decoration: none;
-            color: $offWhite;
+              background-color: $blue;
+              box-shadow: 5px 5px 31px -10px #000000;
+            }
+            .link {
+              &:hover {
+              text-decoration: none;
+              color: $offWhite;
+              }
             }
           }
         }
@@ -218,11 +231,19 @@ button {
   padding-bottom: 80px;
   padding-top: 80px;
   h3, .projects__container__content__text__title {
-    color: $purple;
+    color: $blue;
+    text-shadow: 1px 1px $green;
+    &:hover {
+    text-decoration: none;
+    color: $green;
+    }
 
   }
-  .projects__container__content__text__btn{
-    background-color: $purple;
+  .projects__container__content__text__btnSec__btn{
+    background-color: $blue;
+    &:hover {
+      background-color: $green;
+    }
   }
 }
 
