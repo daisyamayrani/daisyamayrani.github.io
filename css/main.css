@@ -12,9 +12,12 @@ body p {
 button {
   background-color: #50A39B;
   color: #FFFAFA;
-  border-radius: 10%;
+  border-radius: 10px;
   border: 1px solid black;
-  width: 5rem; }
+  width: 5rem;
+  -webkit-box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75); }
   button a {
     color: #FFFAFA;
     text-shadow: 0.1px 0.1px #535f95; }
@@ -50,7 +53,24 @@ button {
       .header .jumbotron__box__title {
         font-size: 3rem; }
       .header .jumbotron__box__paragraph {
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin-bottom: 30px; }
+      .header .jumbotron__box__btn {
+        width: auto;
+        padding: 6px 20px 6px 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        -webkit-box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75); }
+        .header .jumbotron__box__btn:hover {
+          text-decoration: none;
+          background-color: #9e87c4; }
+        .header .jumbotron__box__btn a {
+          font-size: 1.0rem;
+          font-weight: 200;
+          color: white;
+          text-decoration: none; }
 
 .info {
   height: 100%; }
@@ -70,8 +90,8 @@ button {
           width: 100%;
           border-radius: 40%;
           margin-bottom: 50px;
-          margin-left: auto;
-          margin-right: auto; }
+          margin-left: auto !important;
+          margin-right: auto !important; }
         .info__align__aboutMe__content__paragraph {
           font-size: .9rem;
           font-family: 'Open Sans', sans-serif;
@@ -82,7 +102,7 @@ button {
       padding-top: 0;
       padding-bottom: 0; }
       .info__align__knowledge__content {
-        width: 70%;
+        width: 65%;
         padding-top: 0px;
         margin-left: auto;
         margin-right: auto; }
@@ -179,7 +199,8 @@ button {
       color: #FFFAFA; }
       .footer__links__a:hover {
         color: #FFC8A0;
-        text-shadow: 1.2px 1.2px #535f95; }
+        text-shadow: 1.2px 1.2px #535f95;
+        text-decoration: none; }
   .footer__copyright {
     padding-bottom: 5px; }
     .footer__copyright__p {

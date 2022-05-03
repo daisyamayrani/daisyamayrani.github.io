@@ -25,9 +25,12 @@ body p {
 button {
  background-color: $green;
  color: $offWhite;
- border-radius: 10%;
+ border-radius: 10px;
  border: 1px solid black;
  width: 5rem;
+ -webkit-box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
+box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
  a {
    color: $offWhite;
    text-shadow: 0.1px 0.1px #535f95;
@@ -75,15 +78,31 @@ button {
       vertical-align: middle;
       text-shadow: 2px 2px 5px rgba(0, 5, 0, 1);
       color: $offWhite;
-
-      // margin-top: auto;
-      // margin-bottom: auto;
-      // text-align: center;
       &__title {
         font-size: 3rem;
       }
       &__paragraph {
         font-size:2rem;
+        margin-bottom: 30px;
+      }
+      &__btn {
+        width: auto;
+        padding: 6px 20px 6px 20px;
+        border: 2px solid white;
+        border-radius: 20px;
+        -webkit-box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
+        box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
+        &:hover {
+        text-decoration: none;
+        background-color: $purple;
+        }
+        a {
+          font-size: 1.0rem;
+          font-weight: 200;
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -108,8 +127,8 @@ button {
           width: 100%;
           border-radius:40%;
           margin-bottom: 50px;
-          margin-left: auto;
-          margin-right: auto;
+          margin-left: auto !important;
+          margin-right: auto !important;
         }
         &__paragraph {
           font-size: .9rem;
@@ -124,7 +143,7 @@ button {
       padding-top: 0;
       padding-bottom: 0;
       &__content {
-        width: 70%;
+        width: 65%;
         padding-top: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -267,6 +286,7 @@ button {
         &:hover {
         color: $softPink;
         text-shadow: 1.2px 1.2px $blue;
+        text-decoration: none;
     }
       }
     }
