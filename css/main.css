@@ -32,8 +32,8 @@ button {
     color: #50A39B !important;
     text-shadow: 1.2px 1.2px #535f95; }
   .header .navbar .nav-item .nav-link:hover {
-    color: #FFC8A0;
-    text-shadow: 1.2px 1.2px #535f95; }
+    color: #535f95;
+    text-shadow: 1.2px 1.2px #9e87c4; }
   .header .jumbotron {
     background-image: url("/img/lightComp.jpg");
     background-position: center;
@@ -68,7 +68,7 @@ button {
         box-shadow: 3px 9px 31px -5px rgba(0, 0, 0, 0.75); }
         .header .jumbotron__box__btn:hover {
           text-decoration: none;
-          background-color: #9e87c4; }
+          background-color: #535f95; }
         .header .jumbotron__box__btn a {
           font-size: 1.0rem;
           font-weight: 200;
@@ -96,7 +96,8 @@ button {
           margin-left: auto !important;
           margin-right: auto !important; }
         .info__align__aboutMe__content__paragraph {
-          font-size: 1rem;
+          font-size: .9rem;
+          text-align: center;
           font-family: 'Open Sans', sans-serif;
           font-weight: 400; }
     .info__align__knowledge {
@@ -207,11 +208,11 @@ button {
     .footer__links__a {
       font-size: 20px;
       margin-left: 20px;
-      text-shadow: 1px 1px #9e87c4;
+      text-shadow: 1px 1px #535f95;
       color: #FFFAFA; }
       .footer__links__a:hover {
-        color: #FFC8A0;
-        text-shadow: 1.2px 1.2px #535f95;
+        color: #535f95;
+        text-shadow: 1.2px 1.2px #2B2B2B;
         text-decoration: none; }
   .footer__copyright {
     padding-bottom: 5px; }

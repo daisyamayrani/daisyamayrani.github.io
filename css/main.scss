@@ -55,8 +55,8 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
     .nav-item {
       .nav-link {
         &:hover {
-        color:$softPink;
-        text-shadow: 1.2px 1.2px $blue;
+        color: $blue;
+        text-shadow: 1.2px 1.2px $purple;
     }
       }
     }
@@ -98,7 +98,7 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
         box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
         &:hover {
         text-decoration: none;
-        background-color: $purple;
+        background-color: $blue;
         }
         a {
           font-size: 1.0rem;
@@ -134,7 +134,8 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
           margin-right: auto !important;
         }
         &__paragraph {
-          font-size: 1rem;
+          font-size: .9rem;
+          text-align: center;
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
         }
@@ -293,11 +294,11 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
       &__a {
         font-size: 20px;
         margin-left:20px;
-        text-shadow: 1px 1px $purple;
+        text-shadow: 1px 1px $blue;
         color: $offWhite;
         &:hover {
-        color: $softPink;
-        text-shadow: 1.2px 1.2px $blue;
+        color: $blue;
+        text-shadow: 1.2px 1.2px $offBlack;
         text-decoration: none;
     }
       }
