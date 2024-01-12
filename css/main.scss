@@ -86,11 +86,15 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
       }
       &__paragraph {
         font-size:2rem;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        &__text {
+          font-size:1.5rem;
+          margin-top: 0px;
+        }
       }
       &__btn {
         width: auto;
-        padding: 6px 20px 6px 20px;
+        padding: 10px 40px 10px 40px;
         border: 2px solid white;
         border-radius: 20px;
         -webkit-box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
@@ -135,7 +139,7 @@ box-shadow: 3px 9px 31px -5px rgba(0,0,0,0.75);
         }
         &__paragraph {
           font-size: .9rem;
-          text-align: center;
+          // text-align: center;
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
         }
